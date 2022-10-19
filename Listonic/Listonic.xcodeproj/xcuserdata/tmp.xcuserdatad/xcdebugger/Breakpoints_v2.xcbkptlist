@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EA4B2424-D143-4573-9ECA-F0BAF2153C10"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A94DBAC6-1CA6-401E-A15A-5415FB4F253B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Listonic/List/ListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "downloadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A94DBAC6-1CA6-401E-A15A-5415FB4F253B - 2cc686fe5b5cdcf1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Listonic.ListViewModel.downloadData() -&gt; ()"
+                  moduleName = "Listonic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tmp/Desktop/Listonic/Listonic/List/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "255">
+               </Location>
+               <Location
+                  uuid = "A94DBAC6-1CA6-401E-A15A-5415FB4F253B - e34b529bac3b9a0a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Listonic.ListViewModel.downloadData() -&gt; ()"
+                  moduleName = "Listonic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tmp/Desktop/Listonic/Listonic/List/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

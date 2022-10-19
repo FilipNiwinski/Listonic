@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE6EC49D2900571D0074B1FA /* ListonicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC49C2900571D0074B1FA /* ListonicApp.swift */; };
+		AE6EC49F2900571D0074B1FA /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC49E2900571D0074B1FA /* ListView.swift */; };
+		AE6EC4A1290057200074B1FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6EC4A0290057200074B1FA /* Assets.xcassets */; };
+		AE6EC4A5290057200074B1FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6EC4A4290057200074B1FA /* Preview Assets.xcassets */; };
+		AE6EC4AF290057210074B1FA /* ListonicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC4AE290057210074B1FA /* ListonicTests.swift */; };
+		AE6EC4B9290057210074B1FA /* ListonicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC4B8290057210074B1FA /* ListonicUITests.swift */; };
+		AE6EC4BB290057210074B1FA /* ListonicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC4BA290057210074B1FA /* ListonicUITestsLaunchTests.swift */; };
+		AE6EC50229005B020074B1FA /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC50129005B020074B1FA /* ListViewModel.swift */; };
+		AE6EC504290060900074B1FA /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC503290060900074B1FA /* ListModel.swift */; };
+		AE6EC5062900613F0074B1FA /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC5052900613F0074B1FA /* CityModel.swift */; };
+		AE6EC508290061750074B1FA /* CommuneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC507290061750074B1FA /* CommuneModel.swift */; };
+		AE6EC50C29006D8F0074B1FA /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC50B29006D8F0074B1FA /* DetailsView.swift */; };
+		AE6EC50E29006F370074B1FA /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC50D29006F370074B1FA /* DetailsViewModel.swift */; };
+		AE6EC511290076CB0074B1FA /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC510290076CA0074B1FA /* DetailsModel.swift */; };
+		AE6EC513290077780074B1FA /* DustLevelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC512290077780074B1FA /* DustLevelModel.swift */; };
+		AE6EC515290082EC0074B1FA /* DisplayStationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6EC514290082EC0074B1FA /* DisplayStationData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE6EC4AB290057210074B1FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6EC4912900571D0074B1FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE6EC4982900571D0074B1FA;
+			remoteInfo = Listonic;
+		};
+		AE6EC4B5290057210074B1FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6EC4912900571D0074B1FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE6EC4982900571D0074B1FA;
+			remoteInfo = Listonic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE6EC4992900571D0074B1FA /* Listonic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listonic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6EC49C2900571D0074B1FA /* ListonicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListonicApp.swift; sourceTree = "<group>"; };
+		AE6EC49E2900571D0074B1FA /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		AE6EC4A0290057200074B1FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE6EC4A2290057200074B1FA /* Listonic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Listonic.entitlements; sourceTree = "<group>"; };
+		AE6EC4A4290057200074B1FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE6EC4AA290057210074B1FA /* ListonicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListonicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6EC4AE290057210074B1FA /* ListonicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListonicTests.swift; sourceTree = "<group>"; };
+		AE6EC4B4290057210074B1FA /* ListonicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListonicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6EC4B8290057210074B1FA /* ListonicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListonicUITests.swift; sourceTree = "<group>"; };
+		AE6EC4BA290057210074B1FA /* ListonicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListonicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE6EC50129005B020074B1FA /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		AE6EC503290060900074B1FA /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		AE6EC5052900613F0074B1FA /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		AE6EC507290061750074B1FA /* CommuneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuneModel.swift; sourceTree = "<group>"; };
+		AE6EC50B29006D8F0074B1FA /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		AE6EC50D29006F370074B1FA /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		AE6EC510290076CA0074B1FA /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		AE6EC512290077780074B1FA /* DustLevelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DustLevelModel.swift; sourceTree = "<group>"; };
+		AE6EC514290082EC0074B1FA /* DisplayStationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStationData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE6EC4962900571D0074B1FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6EC4A7290057210074B1FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6EC4B1290057210074B1FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE6EC4902900571D0074B1FA = {
+			isa = PBXGroup;
+			children = (
+				AE6EC49B2900571D0074B1FA /* Listonic */,
+				AE6EC4AD290057210074B1FA /* ListonicTests */,
+				AE6EC4B7290057210074B1FA /* ListonicUITests */,
+				AE6EC49A2900571D0074B1FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE6EC49A2900571D0074B1FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EC4992900571D0074B1FA /* Listonic.app */,
+				AE6EC4AA290057210074B1FA /* ListonicTests.xctest */,
+				AE6EC4B4290057210074B1FA /* ListonicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE6EC49B2900571D0074B1FA /* Listonic */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EC50A29006D850074B1FA /* Details */,
+				AE6EC50029005AF20074B1FA /* List */,
+				AE6EC49C2900571D0074B1FA /* ListonicApp.swift */,
+				AE6EC4A0290057200074B1FA /* Assets.xcassets */,
+				AE6EC4A2290057200074B1FA /* Listonic.entitlements */,
+				AE6EC4A3290057200074B1FA /* Preview Content */,
+			);
+			path = Listonic;
+			sourceTree = "<group>";
+		};
+		AE6EC4A3290057200074B1FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EC4A4290057200074B1FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AE6EC4AD290057210074B1FA /* ListonicTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EC4AE290057210074B1FA /* ListonicTests.swift */,
+			);
+			path = ListonicTests;
+			sourceTree = "<group>";
+		};
+		AE6EC4B7290057210074B1FA /* ListonicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EC4B8290057210074B1FA /* ListonicUITests.swift */,
+				AE6EC4BA290057210074B1FA /* ListonicUITestsLaunchTests.swift */,
+			);
+			path = ListonicUITests;
+			sourceTree = "<group>";
+		};
+		AE6EC50029005AF20074B1FA /* List */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EC509290065B40074B1FA /* Models */,
+				AE6EC49E2900571D0074B1FA /* ListView.swift */,
+				AE6EC50129005B020074B1FA /* ListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		AE6EC509290065B40074B1FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EC503290060900074B1FA /* ListModel.swift */,
+				AE6EC5052900613F0074B1FA /* CityModel.swift */,
+				AE6EC507290061750074B1FA /* CommuneModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE6EC50A29006D850074B1FA /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EC50F290076C00074B1FA /* Models */,
+				AE6EC50B29006D8F0074B1FA /* DetailsView.swift */,
+				AE6EC50D29006F370074B1FA /* DetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		AE6EC50F290076C00074B1FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EC510290076CA0074B1FA /* DetailsModel.swift */,
+				AE6EC512290077780074B1FA /* DustLevelModel.swift */,
+				AE6EC514290082EC0074B1FA /* DisplayStationData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE6EC4982900571D0074B1FA /* Listonic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6EC4BE290057210074B1FA /* Build configuration list for PBXNativeTarget "Listonic" */;
+			buildPhases = (
+				AE6EC4952900571D0074B1FA /* Sources */,
+				AE6EC4962900571D0074B1FA /* Frameworks */,
+				AE6EC4972900571D0074B1FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Listonic;
+			productName = Listonic;
+			productReference = AE6EC4992900571D0074B1FA /* Listonic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE6EC4A9290057210074B1FA /* ListonicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6EC4C1290057210074B1FA /* Build configuration list for PBXNativeTarget "ListonicTests" */;
+			buildPhases = (
+				AE6EC4A6290057210074B1FA /* Sources */,
+				AE6EC4A7290057210074B1FA /* Frameworks */,
+				AE6EC4A8290057210074B1FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE6EC4AC290057210074B1FA /* PBXTargetDependency */,
+			);
+			name = ListonicTests;
+			productName = ListonicTests;
+			productReference = AE6EC4AA290057210074B1FA /* ListonicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE6EC4B3290057210074B1FA /* ListonicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6EC4C4290057210074B1FA /* Build configuration list for PBXNativeTarget "ListonicUITests" */;
+			buildPhases = (
+				AE6EC4B0290057210074B1FA /* Sources */,
+				AE6EC4B1290057210074B1FA /* Frameworks */,
+				AE6EC4B2290057210074B1FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE6EC4B6290057210074B1FA /* PBXTargetDependency */,
+			);
+			name = ListonicUITests;
+			productName = ListonicUITests;
+			productReference = AE6EC4B4290057210074B1FA /* ListonicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE6EC4912900571D0074B1FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					AE6EC4982900571D0074B1FA = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					AE6EC4A9290057210074B1FA = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = AE6EC4982900571D0074B1FA;
+					};
+					AE6EC4B3290057210074B1FA = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = AE6EC4982900571D0074B1FA;
+					};
+				};
+			};
+			buildConfigurationList = AE6EC4942900571D0074B1FA /* Build configuration list for PBXProject "Listonic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE6EC4902900571D0074B1FA;
+			productRefGroup = AE6EC49A2900571D0074B1FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE6EC4982900571D0074B1FA /* Listonic */,
+				AE6EC4A9290057210074B1FA /* ListonicTests */,
+				AE6EC4B3290057210074B1FA /* ListonicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE6EC4972900571D0074B1FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6EC4A5290057200074B1FA /* Preview Assets.xcassets in Resources */,
+				AE6EC4A1290057200074B1FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6EC4A8290057210074B1FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6EC4B2290057210074B1FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE6EC4952900571D0074B1FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6EC5062900613F0074B1FA /* CityModel.swift in Sources */,
+				AE6EC515290082EC0074B1FA /* DisplayStationData.swift in Sources */,
+				AE6EC511290076CB0074B1FA /* DetailsModel.swift in Sources */,
+				AE6EC513290077780074B1FA /* DustLevelModel.swift in Sources */,
+				AE6EC50C29006D8F0074B1FA /* DetailsView.swift in Sources */,
+				AE6EC49F2900571D0074B1FA /* ListView.swift in Sources */,
+				AE6EC50E29006F370074B1FA /* DetailsViewModel.swift in Sources */,
+				AE6EC508290061750074B1FA /* CommuneModel.swift in Sources */,
+				AE6EC49D2900571D0074B1FA /* ListonicApp.swift in Sources */,
+				AE6EC50229005B020074B1FA /* ListViewModel.swift in Sources */,
+				AE6EC504290060900074B1FA /* ListModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6EC4A6290057210074B1FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6EC4AF290057210074B1FA /* ListonicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6EC4B0290057210074B1FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6EC4BB290057210074B1FA /* ListonicUITestsLaunchTests.swift in Sources */,
+				AE6EC4B9290057210074B1FA /* ListonicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE6EC4AC290057210074B1FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE6EC4982900571D0074B1FA /* Listonic */;
+			targetProxy = AE6EC4AB290057210074B1FA /* PBXContainerItemProxy */;
+		};
+		AE6EC4B6290057210074B1FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE6EC4982900571D0074B1FA /* Listonic */;
+			targetProxy = AE6EC4B5290057210074B1FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AE6EC4BC290057210074B1FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE6EC4BD290057210074B1FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AE6EC4BF290057210074B1FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Listonic/Listonic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Listonic/Preview Content\"";
+				DEVELOPMENT_TEAM = JGVH6YGDTU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filip.Listonic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE6EC4C0290057210074B1FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Listonic/Listonic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Listonic/Preview Content\"";
+				DEVELOPMENT_TEAM = JGVH6YGDTU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filip.Listonic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE6EC4C2290057210074B1FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JGVH6YGDTU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filip.ListonicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Listonic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Listonic";
+			};
+			name = Debug;
+		};
+		AE6EC4C3290057210074B1FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JGVH6YGDTU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filip.ListonicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Listonic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Listonic";
+			};
+			name = Release;
+		};
+		AE6EC4C5290057210074B1FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JGVH6YGDTU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filip.ListonicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Listonic;
+			};
+			name = Debug;
+		};
+		AE6EC4C6290057210074B1FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JGVH6YGDTU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filip.ListonicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Listonic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE6EC4942900571D0074B1FA /* Build configuration list for PBXProject "Listonic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6EC4BC290057210074B1FA /* Debug */,
+				AE6EC4BD290057210074B1FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE6EC4BE290057210074B1FA /* Build configuration list for PBXNativeTarget "Listonic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6EC4BF290057210074B1FA /* Debug */,
+				AE6EC4C0290057210074B1FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE6EC4C1290057210074B1FA /* Build configuration list for PBXNativeTarget "ListonicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6EC4C2290057210074B1FA /* Debug */,
+				AE6EC4C3290057210074B1FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE6EC4C4290057210074B1FA /* Build configuration list for PBXNativeTarget "ListonicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6EC4C5290057210074B1FA /* Debug */,
+				AE6EC4C6290057210074B1FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE6EC4912900571D0074B1FA /* Project object */;
+}
